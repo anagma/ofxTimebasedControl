@@ -12,8 +12,11 @@ ofxTimebasedControl::ofxTimebasedControl(float defaultVal){
 	current = target = defaultVal;
 	duration = startTime = 0;
 	bRunning = false;
+	bPaused = false;
 };
-
+ofxTimebasedControl::~ofxTimebasedControl(){
+	ofRemoveListener(ofEvents().update, this, &ofxTimebasedControl::update);	
+}
 void ofxTimebasedControl::start(float target_, float duration_){
 	
 	stop();
@@ -25,7 +28,6 @@ void ofxTimebasedControl::start(float target_, float duration_){
 	if(duration < 0){
 		duration = 0;
 		current = target;
-		bRunning = false;
 	}else{
 		bRunning = true;
 		ofAddListener(ofEvents().update, this, &ofxTimebasedControl::update);
@@ -33,19 +35,22 @@ void ofxTimebasedControl::start(float target_, float duration_){
 };
 void ofxTimebasedControl::stop(){
 	bRunning = false;
+	bPaused = false;
 	ofRemoveListener(ofEvents().update, this, &ofxTimebasedControl::update);
 };
 void ofxTimebasedControl::update(ofEventArgs &e){
-	// update current value;
-	float pct = (ofGetElapsedTimeMillis()-startTime)/duration;
-	if(pct >= 1){
-		ofLogVerbose() << "time line reached... notify it";
-		// current arrived to target
-		current = target;
-		stop();
-		ofNotifyEvent(timelineDone, this);
-	}else{
-		current = currentOriginal + (target-currentOriginal)*pct;
+	if(! bPaused){
+		// update current value;
+		float pct = (ofGetElapsedTimeMillis()-startTime)/duration;
+		if(pct >= 1){
+			ofLogVerbose("ofxTimebasedControl:"+ofToString(this)) << "time line reached... notify it";
+			// current arrived to target
+			current = target;
+			stop();
+			ofNotifyEvent(timelineDone, this);
+		}else{
+			current = currentOriginal + (target-currentOriginal)*pct;
+		}
 	}
 };
 
@@ -58,4 +63,22 @@ float ofxTimebasedControl::get(){
 };
 bool ofxTimebasedControl::isRunning(){
 	return bRunning;
+};
+
+
+void ofxTimebasedControl::pause(){
+	if(isRunning()){
+		bPaused = true;
+		pausedRestDuration = duration - (ofGetElapsedTimeMillis()-startTime);
+	}
+};
+void ofxTimebasedControl::resume(){
+	if(isRunning()){
+		bPaused = false;
+		set(current);
+		start(target, pausedRestDuration);
+	}
+};
+bool ofxTimebasedControl::isPaused(){
+	return bPaused;
 };

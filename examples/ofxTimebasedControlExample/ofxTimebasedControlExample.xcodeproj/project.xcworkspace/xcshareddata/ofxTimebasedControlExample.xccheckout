@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E75E2AAA-78A5-46DD-BC32-4173147402FD</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ofxTimebasedControlExample</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>57CA3B8CB047383787F0864D6DAABF0CA143D5EB</key>
+		<string>https://github.com/anagma/ofxTimebasedControl.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>examples/ofxTimebasedControlExample/ofxTimebasedControlExample.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>57CA3B8CB047383787F0864D6DAABF0CA143D5EB</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/anagma/ofxTimebasedControl.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>57CA3B8CB047383787F0864D6DAABF0CA143D5EB</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>57CA3B8CB047383787F0864D6DAABF0CA143D5EB</string>
+			<key>IDESourceControlWCCName</key>
+			<string>ofxTimebasedControl</string>
+		</dict>
+	</array>
+</dict>
+</plist>
