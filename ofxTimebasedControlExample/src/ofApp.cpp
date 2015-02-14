@@ -1,9 +1,9 @@
-#include "testApp.h"
+#include "ofApp.h"
 
 //--------------------------------------------------------------
-void testApp::setup(){
+void ofApp::setup(){
 	frameRate = 60;
-
+	
 	ofBackground(0, 0, 0);
 	ofSetVerticalSync(false);
 	ofSetFrameRate(frameRate);
@@ -19,29 +19,28 @@ void testApp::setup(){
 	degreeInTime.set(0);
 	// to 360, in 30 sec
 	degreeInTime.start(360, 30000);
-	ofAddListener(degreeInTime.timelineDone, this, &testApp::repeat); // when time is done, repeat it.
+	ofAddListener(degreeInTime.timelineDone, this, &ofApp::repeat); // when time is done, repeat it.
 
 }
-
-void testApp::repeat(){
+//--------------------------------------------------------------
+void ofApp::repeat(){
 	// repeat it
 	degreeInTime.set(0);
 	degreeInTime.start(360, 30000); // 30 sec
 	ofLogNotice() << "timeline done, repeat it";
 }
-
 //--------------------------------------------------------------
-void testApp::update(){
-	
+void ofApp::update(){
 	// if the frame rate is 60 strictly, it must be 360 in 30 sec.
 	degreeInFrame += 0.2;
 	if (degreeInFrame > 360) {
 		degreeInFrame -= 360;
 	}
+
 }
 
 //--------------------------------------------------------------
-void testApp::draw(){
+void ofApp::draw(){
 	// in frame
 	glPushMatrix();
 	glTranslated(ofGetWidth()/3, ofGetHeight()/2, 0);
@@ -70,11 +69,10 @@ void testApp::draw(){
 	ofDrawBitmapString("frame rate: "+ofToString(ofGetFrameRate()), 20, 20);
 	ofDrawBitmapString("elapsed time: "+ofToString(ofGetElapsedTimeMillis()), 20, 40);
 	ofDrawBitmapString("press left to decrease frame rate, right to increse frame rate", 20, 60);
-	
 }
 
 //--------------------------------------------------------------
-void testApp::keyPressed(int key){
+void ofApp::keyPressed(int key){
 	if(key == OF_KEY_LEFT){
 		frameRate-=10;
 		if(frameRate < 10){
@@ -91,41 +89,41 @@ void testApp::keyPressed(int key){
 }
 
 //--------------------------------------------------------------
-void testApp::keyReleased(int key){
+void ofApp::keyReleased(int key){
 
 }
 
 //--------------------------------------------------------------
-void testApp::mouseMoved(int x, int y ){
+void ofApp::mouseMoved(int x, int y ){
 
 }
 
 //--------------------------------------------------------------
-void testApp::mouseDragged(int x, int y, int button){
+void ofApp::mouseDragged(int x, int y, int button){
 
 }
 
 //--------------------------------------------------------------
-void testApp::mousePressed(int x, int y, int button){
+void ofApp::mousePressed(int x, int y, int button){
 
 }
 
 //--------------------------------------------------------------
-void testApp::mouseReleased(int x, int y, int button){
+void ofApp::mouseReleased(int x, int y, int button){
 
 }
 
 //--------------------------------------------------------------
-void testApp::windowResized(int w, int h){
+void ofApp::windowResized(int w, int h){
 
 }
 
 //--------------------------------------------------------------
-void testApp::gotMessage(ofMessage msg){
+void ofApp::gotMessage(ofMessage msg){
 
 }
 
 //--------------------------------------------------------------
-void testApp::dragEvent(ofDragInfo dragInfo){ 
+void ofApp::dragEvent(ofDragInfo dragInfo){ 
 
 }

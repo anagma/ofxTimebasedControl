@@ -5,7 +5,7 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>E75E2AAA-78A5-46DD-BC32-4173147402FD</string>
+	<string>6EE6E0FB-8499-4AF1-945F-67EE6D9751C1</string>
 	<key>IDESourceControlProjectName</key>
 	<string>ofxTimebasedControlExample</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
@@ -14,11 +14,11 @@
 		<string>https://github.com/anagma/ofxTimebasedControl.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>examples/ofxTimebasedControlExample/ofxTimebasedControlExample.xcodeproj</string>
+	<string>ofxTimebasedControlExample/ofxTimebasedControlExample.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>57CA3B8CB047383787F0864D6DAABF0CA143D5EB</key>
-		<string>../../../..</string>
+		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/anagma/ofxTimebasedControl.git</string>

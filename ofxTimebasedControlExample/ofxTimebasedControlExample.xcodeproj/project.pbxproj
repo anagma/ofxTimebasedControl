@@ -9,7 +9,7 @@
 		<string>46</string>
 		<key>objects</key>
 		<dict>
-			<key>6642d0ff411fa348fd2ec03aa41b9d67</key>
+			<key>71072F7BD82FAB6D4B6C9B8B</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.c.h</string>
@@ -20,16 +20,16 @@
 				<key>name</key>
 				<string>ofxTimebasedControl.h</string>
 				<key>path</key>
-				<string>../../../../addons/ofxTimebasedControl/src/ofxTimebasedControl.h</string>
+				<string>../../../addons/ofxTimebasedControl/src/ofxTimebasedControl.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
-			<key>5ce43cf6b268a56c4c1ab2d700047a9c</key>
+			<key>5CE43CF6B268A56C4C1AB2D7</key>
 			<dict>
 				<key>children</key>
 				<array>
-					<string>ab2c945dfddd803f2f4ece8d5328e85b</string>
-					<string>6642d0ff411fa348fd2ec03aa41b9d67</string>
+					<string>9C7F07AC99286CA03B93B4B3</string>
+					<string>71072F7BD82FAB6D4B6C9B8B</string>
 				</array>
 				<key>isa</key>
 				<string>PBXGroup</string>
@@ -38,11 +38,11 @@
 				<key>sourceTree</key>
 				<string>&lt;group&gt;</string>
 			</dict>
-			<key>397a60a2eed0528c67dc7dc9bb86c003</key>
+			<key>397A60A2EED0528C67DC7DC9</key>
 			<dict>
 				<key>children</key>
 				<array>
-					<string>5ce43cf6b268a56c4c1ab2d700047a9c</string>
+					<string>5CE43CF6B268A56C4C1AB2D7</string>
 				</array>
 				<key>isa</key>
 				<string>PBXGroup</string>
@@ -51,14 +51,14 @@
 				<key>sourceTree</key>
 				<string>&lt;group&gt;</string>
 			</dict>
-			<key>880a0cbb239b756e9b8b566b5080749b</key>
+			<key>5F045CAB83FAFCCF1E80A763</key>
 			<dict>
 				<key>fileRef</key>
-				<string>ab2c945dfddd803f2f4ece8d5328e85b</string>
+				<string>9C7F07AC99286CA03B93B4B3</string>
 				<key>isa</key>
 				<string>PBXBuildFile</string>
 			</dict>
-			<key>ab2c945dfddd803f2f4ece8d5328e85b</key>
+			<key>9C7F07AC99286CA03B93B4B3</key>
 			<dict>
 				<key>explicitFileType</key>
 				<string>sourcecode.cpp.cpp</string>
@@ -69,7 +69,7 @@
 				<key>name</key>
 				<string>ofxTimebasedControl.cpp</string>
 				<key>path</key>
-				<string>../../../../addons/ofxTimebasedControl/src/ofxTimebasedControl.cpp</string>
+				<string>../../../addons/ofxTimebasedControl/src/ofxTimebasedControl.cpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
@@ -77,7 +77,7 @@
 			<dict>
 				<key>children</key>
 				<array>
-					<string>397a60a2eed0528c67dc7dc9bb86c003</string>
+					<string>397A60A2EED0528C67DC7DC9</string>
 				</array>
 				<key>isa</key>
 				<string>PBXGroup</string>
@@ -95,7 +95,7 @@
 				<key>name</key>
 				<string>GLUT.framework</string>
 				<key>path</key>
-				<string>../../../../libs/glut/lib/osx/GLUT.framework</string>
+				<string>../../../libs/glut/lib/osx/GLUT.framework</string>
 				<key>sourceTree</key>
 				<string>&lt;group&gt;</string>
 			</dict>
@@ -110,7 +110,6 @@
 					<string>E45BE9710E8CC7DD009D7055</string>
 					<string>E45BE9720E8CC7DD009D7055</string>
 					<string>E45BE9730E8CC7DD009D7055</string>
-					<string>E45BE9740E8CC7DD009D7055</string>
 					<string>E45BE9750E8CC7DD009D7055</string>
 					<string>E45BE9760E8CC7DD009D7055</string>
 					<string>E45BE9770E8CC7DD009D7055</string>
@@ -155,7 +154,7 @@
 				<key>name</key>
 				<string>openFrameworksLib.xcodeproj</string>
 				<key>path</key>
-				<string>../../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj</string>
+				<string>../../../libs/openFrameworksCompiled/project/osx/openFrameworksLib.xcodeproj</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
@@ -258,19 +257,6 @@
 				<key>sourceTree</key>
 				<string>&lt;absolute&gt;</string>
 			</dict>
-			<key>E45BE9740E8CC7DD009D7055</key>
-			<dict>
-				<key>isa</key>
-				<string>PBXFileReference</string>
-				<key>lastKnownFileType</key>
-				<string>wrapper.framework</string>
-				<key>name</key>
-				<string>Carbon.framework</string>
-				<key>path</key>
-				<string>/System/Library/Frameworks/Carbon.framework</string>
-				<key>sourceTree</key>
-				<string>&lt;absolute&gt;</string>
-			</dict>
 			<key>E45BE9750E8CC7DD009D7055</key>
 			<dict>
 				<key>isa</key>
@@ -354,13 +340,6 @@
 			<dict>
 				<key>fileRef</key>
 				<string>E45BE9730E8CC7DD009D7055</string>
-				<key>isa</key>
-				<string>PBXBuildFile</string>
-			</dict>
-			<key>E45BE97E0E8CC7DD009D7055</key>
-			<dict>
-				<key>fileRef</key>
-				<string>E45BE9740E8CC7DD009D7055</string>
 				<key>isa</key>
 				<string>PBXBuildFile</string>
 			</dict>
@@ -485,8 +464,8 @@
 					<key>HEADER_SEARCH_PATHS</key>
 					<array>
 						<string>$(OF_CORE_HEADERS)</string>
-						<string>../../../../addons/ofxTimebasedControl/libs</string>
-						<string>../../../../addons/ofxTimebasedControl/src</string>
+						<string>../../../addons/ofxTimebasedControl/libs</string>
+						<string>../../../addons/ofxTimebasedControl/src</string>
 					</array>
 					<key>ARCHS</key>
 					<string>$(NATIVE_ARCH)</string>
@@ -545,8 +524,8 @@
 					<key>HEADER_SEARCH_PATHS</key>
 					<array>
 						<string>$(OF_CORE_HEADERS)</string>
-						<string>../../../../addons/ofxTimebasedControl/libs</string>
-						<string>../../../../addons/ofxTimebasedControl/src</string>
+						<string>../../../addons/ofxTimebasedControl/libs</string>
+						<string>../../../addons/ofxTimebasedControl/src</string>
 					</array>
 					<key>ARCHS</key>
 					<string>$(NATIVE_ARCH)</string>
@@ -606,7 +585,7 @@
 				<array>
 					<string>E4B69E200A3A1BDC003C02F2</string>
 					<string>E4B69E210A3A1BDC003C02F2</string>
-					<string>880a0cbb239b756e9b8b566b5080749b</string>
+					<string>5F045CAB83FAFCCF1E80A763</string>
 				</array>
 				<key>isa</key>
 				<string>PBXSourcesBuildPhase</string>
@@ -626,7 +605,6 @@
 					<string>E45BE97B0E8CC7DD009D7055</string>
 					<string>E45BE97C0E8CC7DD009D7055</string>
 					<string>E45BE97D0E8CC7DD009D7055</string>
-					<string>E45BE97E0E8CC7DD009D7055</string>
 					<string>E45BE97F0E8CC7DD009D7055</string>
 					<string>E45BE9800E8CC7DD009D7055</string>
 					<string>E45BE9810E8CC7DD009D7055</string>
@@ -711,7 +689,7 @@
 						<string>$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)</string>
 					</array>
 					<key>FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1</key>
-					<string>"$(SRCROOT)/../../../../libs/glut/lib/osx"</string>
+					<string>"$(SRCROOT)/../../../libs/glut/lib/osx"</string>
 					<key>GCC_DYNAMIC_NO_PIC</key>
 					<string>NO</string>
 					<key>GCC_GENERATE_DEBUGGING_SYMBOLS</key>
@@ -815,7 +793,7 @@
 						<string>$(FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1)</string>
 					</array>
 					<key>FRAMEWORK_SEARCH_PATHS_QUOTED_FOR_TARGET_1</key>
-					<string>"$(SRCROOT)/../../../../libs/glut/lib/osx"</string>
+					<string>"$(SRCROOT)/../../../libs/glut/lib/osx"</string>
 					<key>GCC_GENERATE_DEBUGGING_SYMBOLS</key>
 					<string>YES</string>
 					<key>GCC_MODEL_TUNING</key>
@@ -942,9 +920,9 @@
 				<key>isa</key>
 				<string>PBXFileReference</string>
 				<key>name</key>
-				<string>testApp.cpp</string>
+				<string>ofApp.cpp</string>
 				<key>path</key>
-				<string>src/testApp.cpp</string>
+				<string>src/ofApp.cpp</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
@@ -957,9 +935,9 @@
 				<key>lastKnownFileType</key>
 				<string>sourcecode.c.h</string>
 				<key>name</key>
-				<string>testApp.h</string>
+				<string>ofApp.h</string>
 				<key>path</key>
-				<string>src/testApp.h</string>
+				<string>src/ofApp.h</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
@@ -1007,7 +985,7 @@
 				<key>shellPath</key>
 				<string>/bin/sh</string>
 				<key>shellScript</key>
-				<string>cp -f ../../../../libs/fmodex/lib/osx/libfmodex.dylib "$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/libfmodex.dylib"; install_name_tool -change ./libfmodex.dylib @executable_path/libfmodex.dylib "$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/$PRODUCT_NAME";
+				<string>cp -f ../../../libs/fmodex/lib/osx/libfmodex.dylib "$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/libfmodex.dylib"; install_name_tool -change ./libfmodex.dylib @executable_path/libfmodex.dylib "$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/$PRODUCT_NAME";
 mkdir -p "$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources/"
 cp -f "$ICON_FILE" "$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources/"
 </string>
@@ -1107,7 +1085,7 @@ cp -f "$ICON_FILE" "$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/Resources/"
 				<key>name</key>
 				<string>CoreOF.xcconfig</string>
 				<key>path</key>
-				<string>../../../../libs/openFrameworksCompiled/project/osx/CoreOF.xcconfig</string>
+				<string>../../../libs/openFrameworksCompiled/project/osx/CoreOF.xcconfig</string>
 				<key>sourceTree</key>
 				<string>SOURCE_ROOT</string>
 			</dict>
